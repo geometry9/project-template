@@ -1,0 +1,49 @@
+{
+  "name": "project-template",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "webpack-watch": "webpack -w",
+    "express-server": "DEBUG=project-template:* nodemon ./bin/www",
+    "dev": "concurrent --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+    "test": "mocha --require ignore-styles -w public/javascripts/src/test/browser.js public/javascripts/src/test/*.spec.js"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "morgan": "~1.7.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "serve-favicon": "~2.3.0",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "classnames": "^2.2.5",
+    "concurrently": "^3.1.0",
+    "css-loader": "^0.26.1",
+    "dotenv": "^4.0.0",
+    "enzyme": "^2.7.1",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^9.9.1",
+    "jsx-loader": "^0.13.2",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.4.2",
+    "style-loader": "^0.13.1"
+  }
+}
