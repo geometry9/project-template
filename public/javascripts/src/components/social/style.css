@@ -1,0 +1,23 @@
+.etsy, .instagram, .facebook, .social{
+  height: 32px;
+  width: 32px;
+  fill: #fff;
+}
+.etsy{}
+.instagram{}
+.facebook{}
+.social{
+  width: 226px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.social ul{
+  list-style: none;
+}
+.social li{
+  float: left;
+  margin-left: 30px;
+}
+.social li:first-child{
+  margin-left: 0px;
+}

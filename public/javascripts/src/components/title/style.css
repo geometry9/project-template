@@ -1,0 +1,40 @@
+.title{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0;
+}
+.title h1{
+  letter-spacing: 0.3em;
+  font-weight: 100;
+}
+.title h3{
+  letter-spacing: 0.2em;
+  font-weight: 100;
+}
+
+
+:global .titles-enter {
+  opacity: 0.01;
+}
+
+:global .titles-enter.titles-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+
+:global .titles-leave {
+  opacity: 1;
+}
+
+:global .titles-leave.titles-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+:global .titles-appear {
+  opacity: 0.01;
+  transition: opacity .6s ease-in;
+}
+:global .titles-appear.titles-appear-active {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+.menu{
+  margin-top: 10px;
+}
+.menu li{
+  float: left;
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s ease
+}
+.menu li:hover{
+  font-size: 15px;
+  margin: 8px;
+}
+.menu-wrapper{
+  display: inline-block;
+  float: right;
+}
