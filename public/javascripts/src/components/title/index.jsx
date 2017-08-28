@@ -15,9 +15,8 @@ const Title = () => {
       transitionLeave={false}
     >
       <div className={style.title}>
-
-          <h3>This is a slightly longer company slogan</h3>
-          <h1>Company Name</h1>
+          <h1>Gro</h1>
+          <h3>Something something plants</h3>
       </div>
     </CSSTransitionGroup>
   )
