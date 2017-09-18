@@ -3,8 +3,8 @@ html, body {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  background: #2C2946;
-  color: #3B2E40;
+  background: #B8B08D;
+  color: #283845;
 }
 ul{list-style: none;margin: 0;}
 a{text-decoration: none; color: #fff;}
@@ -25,25 +25,24 @@ h3{
   width: 100%;
   top: 0;
   left: 0;
-  background: #aed581;
+  background: url('/images/homepage_bg.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.homepage-wrapper:before {
-  content: '';
-  position: absolute;
+
+.about-wrapper{
+  position: fixed;
+  height: 100%;
+  width: 100%;
   top: 0;
-  right: 0;
-  bottom: 0;
-  right: 0;
-  width: 0;
-	height: 0;
-	border-top: 900px solid red;
-	border-left: 900px solid transparent;
-  opacity: 0.6;
-  z-index: -1;
+  left: 0;
+  background: #283845;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .center-vertically{
@@ -53,7 +52,39 @@ h3{
   top: 50%;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
+
+.section-wrapper{
+  width: 70%;
+  margin: 0 auto;
+  color: #B8B08D;
+}
+
+.about-picture{
+  margin-top:50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.hillary{
+  height: 370px;
+  margin-left: -40px;
+}
+
+.monica{
+  height: 265px;
+  margin-left: -10px;
+}
+
+.desc{
+  width: 50%;
+  float:right;
+  margin-top: -220px;
+}
+
 .slider{
   width: 90%;
   margin: 0 auto;

@@ -16,6 +16,7 @@ ReactDOM.render(
     <div className="ROUTES">
       <Route exact path="/" component={Home}/>
       <Route path="/collections" component={Gallery}/>
+      <Route path="/about" component={About}/>
     </div>
   </Router>,
   document.getElementById('root')

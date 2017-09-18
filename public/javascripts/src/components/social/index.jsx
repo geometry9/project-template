@@ -11,12 +11,12 @@ const Social = (props) => {
     <nav className={styles.social}>
       <ul>
         <li>
-          <a href="/">
+          <a target="_blank" href="https://www.facebook.com/moniquemichelejewelry/">
             <Facebook />
           </a>
         </li>
         <li>
-          <a href="/">
+          <a target="_blank" href="https://www.instagram.com/moniquemichelejewelry/">
             <Instagram />
           </a>
         </li><li>

@@ -19,11 +19,10 @@ class Home extends React.Component {
         transitionLeave={false}
       >
       <div className={style["homepage-wrapper"]}>
-        <Logo />
         <Menu key="2"/>
         <div className={style['center-vertically']}>
-          <Title key="3"/>
-          <Social key="4"/>
+          <Logo key="3" />
+          <Social key="4" />
         </div>
       </div>
     </CSSTransitionGroup>

@@ -5,7 +5,7 @@ import FaIconPack from 'react-icons/lib/fa';
 
 const Logo = () => {
   return(
-    <i className="react-icons/lib/fa/leaf" />
+    <img className={style.logo} src="/images/white_logo.png" />
   )
 }
 
