@@ -3,8 +3,10 @@ html, body {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  background: #B8B08D;
-  color: #283845;
+  color: #FFF;
+  background-color: #333;
+  font-size: 17px;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 ul{list-style: none;margin: 0;}
 a{text-decoration: none; color: #fff;}
@@ -25,7 +27,18 @@ h3{
   width: 100%;
   top: 0;
   left: 0;
-  background: url('/images/homepage_bg.png');
+}
+
+.homepage-wrapper::after {
+  content: "";
+  background: url('/images/homepage_bg.png') no-repeat;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -58,7 +71,6 @@ h3{
 .section-wrapper{
   width: 70%;
   margin: 0 auto;
-  color: #B8B08D;
 }
 
 .about-picture{
@@ -81,8 +93,12 @@ h3{
 
 .desc{
   width: 50%;
-  float:right;
+  float: right;
   margin-top: -220px;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.04em;
+  line-height: 1.3em;
+  font-size: 1.2em;
 }
 
 .slider{
@@ -123,4 +139,302 @@ h3{
 }
 :global .slick-list{
   width: 100%;
+}
+
+:global .slick-slider{
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+:global .slick-slider img{
+  width: 800px;
+  margin: 0 auto;
+  -webkit-filter: grayscale(25%); /* Safari */
+  filter: grayscale(25%);
+}
+
+
+:global .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+:global .right .bm-burger-button {
+  left: initial;
+  right: 36px;
+}
+:global .bm-burger-bars {
+  background: #373a47;
+}
+:global .bm-morph-shape {
+  fill: #373a47;
+}
+:global .bm-menu {
+  background: #373a47;
+}
+:global .bm-menu a {
+  color: #b8b7ad;
+}
+:global .bm-menu a:hover,
+:global .bm-menu a:focus {
+  color: #c94e50;
+}
+:global .bm-item-list a {
+  padding: 0.8em;
+}
+:global .bm-item-list .menu-item{
+    margin: 5px 0px;
+    border-bottom: 1px solid #FFF;
+}
+:global .bm-item-list a span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+:global .menu-1 .bm-cross {
+  background: #bdc3c7;
+}
+:global .menu-1 .bm-menu {
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+:global .menu-2 .bm-cross {
+  background: #999;
+}
+:global .menu-2 .bm-menu {
+  padding: 3.4em 1em 0;
+}
+:global .menu-2 a {
+  padding: 1em;
+}
+:global .menu-2 i {
+  font-size: 1.7em;
+  vertical-align: middle;
+  color: #282a35;
+}
+:global .menu-3 .bm-cross {
+  background: #888;
+}
+:global .menu-3 .bm-menu {
+  padding: 2em 1em;
+  font-size: 1.15em;
+}
+:global .menu-3 i {
+  opacity: 0.5;
+}
+:global .menu-3 span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+}
+:global .menu-4 .bm-cross {
+  background: #888;
+}
+:global .menu-4 h2 {
+  margin: 0 auto;
+  padding: 2em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+:global .menu-4 h2 i {
+  margin-left: 0.2em;
+}
+:global .menu-4 h2 span {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+:global .menu-4 a {
+  padding: 1em;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+:global .menu-4 a span {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+:global .menu-4 a:hover,
+:global .menu-4 a:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+  color: #b8b7ad;
+}
+:global #slide .bm-cross,
+:global #stack .bm-cross,
+:global #reveal .bm-cross {
+  background: #bdc3c7;
+}
+:global #slide .bm-menu,
+:global #stack .bm-menu,
+:global #reveal .bm-menu {
+  padding: 1.5em 0.3em 0;
+  font-size: 3.15em;
+}
+:global #bubble .bm-cross,
+:global #push .bm-cross {
+  background: #999;
+}
+:global #bubble .bm-menu,
+:global #push .bm-menu {
+  padding: 3.4em 1em 0;
+}
+:global #bubble a,
+:global #push a {
+  padding: 1em;
+}
+:global #bubble i,
+:global #push i {
+  font-size: 1.7em;
+  vertical-align: middle;
+  color: #282a35;
+}
+:global #elastic .bm-cross {
+  background: #888;
+}
+:global #elastic .bm-menu {
+  padding: 2em 1em;
+  font-size: 1.15em;
+}
+:global #elastic i {
+  opacity: 0.5;
+}
+:global #elastic span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+}
+:global #scaleDown .bm-cross,
+:global #scaleRotate .bm-cross,
+:global #pushRotate .bm-cross,
+:global #fallDown .bm-cross {
+  background: #888;
+}
+:global #scaleDown h2,
+:global #scaleRotate h2,
+:global #pushRotate h2,
+:global #fallDown h2 {
+  margin: 0 auto;
+  padding: 2em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+:global #scaleDown h2 i,
+:global #scaleRotate h2 i,
+:global #pushRotate h2 i,
+:global #fallDown h2 i {
+  margin-left: 0.2em;
+}
+:global #scaleDown h2 span,
+:global #scaleRotate h2 span,
+:global #pushRotate h2 span,
+:global #fallDown h2 span {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+:global #scaleDown a,
+:global #scaleRotate a,
+:global #pushRotate a,
+:global #fallDown a {
+  padding: 1em;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+:global #scaleDown a span,
+:global #scaleRotate a span,
+:global #pushRotate a span,
+:global #fallDown a span {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+:global #scaleDown a:hover,
+:global #scaleRotate a:hover,
+:global #pushRotate a:hover,
+:global #fallDown a:hover,
+:global #scaleDown a:focus,
+:global #scaleRotate a:focus,
+:global #pushRotate a:focus,
+:global #fallDown a:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+  color: #b8b7ad;
+}
+
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 5px;
+}
+
+:global .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+:global .arrow.left {
+  left: -110px;
+}
+
+:global .arrow.right{
+  right: -141px;
+}
+
+:global .left:hover polyline,
+:global .left:focus polyline {
+  stroke-width: 3;
+}
+
+:global .left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+:global .right:hover polyline,
+:global .right:focus polyline {
+  stroke-width: 3;
+}
+
+:global .right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+:global polyline {
+  transition: all 250ms ease-in-out;
+}
+
+.slider-image-wrapper{
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+:global .switch-wrapper {
+  position: relative;
+}
+
+:global .switch-wrapper > div {
+  position: absolute;
+}
+
+:global .shop-link:after{
+  content: 'Coming Soon!';
+  font-size: 0.5em;
+  display: block;
+  margin-left: -25px;
+  margin-top: 9px;
+  position: absolute;
 }

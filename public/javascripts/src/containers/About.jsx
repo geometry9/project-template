@@ -2,44 +2,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from '../components/menu';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import style from '../../../stylesheets/style.css';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 class About extends React.Component {
   render(){
     return(
-      <CSSTransitionGroup
+      <ReactCSSTransitionGroup
         transitionName="load"
         transitionAppear={true}
+        transitionEnterTimeout={500}
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}
       >
-      <div className={style["about-wrapper"]}>
+      <div key="1" className={style["homepage-wrapper"]}>
         <Menu key="2"/>
         <div className={style['center-vertically']}>
           <div className={style['section-wrapper']}>
             <div className={style['about-picture']}>
               <img className={style.hillary} src="/images/hillaryC.jpg" />
             </div>
-
             <p className={style.desc}>
-              <b>Hillary Diane Rodham Clinton</b> (/ˈhɪləri daɪˈæn ˈrɒdəm ˈklɪntən/; born October 26, 1947) is an American politician who was the 67th United States Secretary of State from 2009 to 2013, U.S. Senator from New York from 2001 to 2009, First Lady of the United States from 1993 to 2001 and the Democratic Party's nominee for President of the United States in the 2016 election.
-            </p>
-          </div>
-          <div className={style['section-wrapper']}>
-            <div className={style['about-picture']}>
-              <img className={style.monica} src="/images/monicaL.jpg" />
-            </div>
-            <p className={style.desc}>
-              <b>Monica Samille Lewinsky</b> (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern.
+              A tradition of design, beauty and creativity is breaking barriers in the art and fashion world as mother and daughter Monique and Nicole have teamed up to breathe new life into the industry.
 
-              Lewinsky was made famous after President Bill Clinton admitted to having had what he called an "inappropriate relationship" while she worked at the White House in 1995 - 1996. The alleged affair and its repercussions (which included Clinton's impeachment) became known later as the Lewinsky scandal.
+
+  Monique,  jewelry designer with more than 35 years experience has joined forces with Nicole, a young, vibrant Millennial who brings freshness and simplicity to this year’s latest collection. Both mother and daughter carry on the lineage of the much revered Santos, who’s traditional jewelry adorned past generations.
+Monique and Nicole have created an exciting generation brand of jewelry which expresses love, luxury and more importantly, purpose.
+
+The duo's  creative energy can best be admired in this latest collection where art meets fashion with the use of organic texture and meticulously handcrafted designs. Legacy brings together their heritage and creates space for commemorating what family, tradition and memories means to each and every one of us.
+
+
+  Monique inherited and uncovered a treasure trove of precious gems, like rubies, emeralds, diamonds and precious metals to create Legacy, a tribute to her father which recognizes all the gifts and wonders nature has bestowed up us all.
+
+  Monique is a Fashion Institute of Technology graduate of Jewelry Design.
+Nicole is an alumni from Daytona State College Culinary arts school.
+Both share their wealth of knowledge teaching jewelry design in their San Juan studio in Puerto Rico. It is inside this studio each piece is individually created.
             </p>
           </div>
         </div>
       </div>
-    </CSSTransitionGroup>
+    </ReactCSSTransitionGroup>
     )
   }
 }
