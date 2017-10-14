@@ -20,7 +20,7 @@ const Social = (props) => {
             <Instagram />
           </a>
         </li><li>
-          <a href="/">
+          <a target="_blank" href="https://www.etsy.com/shop/MoniqueMicheleStudio">
             <Etsy />
           </a>
         </li>

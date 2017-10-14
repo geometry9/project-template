@@ -12,18 +12,21 @@ const items = [
           <li key="2" className="menu-item"><Link to="/collections">Gallery</Link></li>,
           <li key="3" className="menu-item"><a href="#" className='shop-link'>Shop</a></li>,
           <li key="4" className="menu-item"><Link to="/about">About</Link></li>,
-          <li key="5" className="menu-item"><Link to="/contact">Contact</Link></li>
         ]
+const mobileMenu = () => {
+  <MenuSlider id="slide" pageWrapId="menu-wrapper" outerContainerId="outer-container" left>
+    <ul>
+      { items }
+    </ul>
+  </MenuSlider>
+}
+
 const Menu = () => {
   return(
     <div id="menu-wrapper" className={style['menu-wrapper']}>
       <MediaQuery maxDeviceWidth={1224}>
         <div id="outer-container">
-          <MenuSlider id="slide" pageWrapId="menu-wrapper" outerContainerId="outer-container" left>
-            <ul>
-              { items }
-            </ul>
-          </MenuSlider>
+
         </div>
       </MediaQuery>
       <MediaQuery minDeviceWidth={1224} values={{deviceWidth: 1600}}>

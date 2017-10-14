@@ -32,7 +32,7 @@ h3{
 .homepage-wrapper::after {
   content: "";
   background: url('/images/homepage_bg.png') no-repeat;
-  opacity: 0.7;
+  opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -45,17 +45,15 @@ h3{
   background-size: cover;
 }
 
+.about-wrapper, .gallery-wrapper{
+  composes: homepage-wrapper;
+}
 .about-wrapper{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #283845;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  overflow: scroll;
+}
+
+.about-wrapper::after{
+  background: url('/images/about_bg.JPG') no-repeat;
 }
 
 .center-vertically{
@@ -67,38 +65,47 @@ h3{
   margin: 0 auto;
   text-align: center;
 }
+.clearfix{}
+.clearfix::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
 
 .section-wrapper{
-  width: 70%;
+  composes: clearfix;
+  width: 90%;
   margin: 0 auto;
 }
 
+.title{
+  font-size: 4em;
+}
+
 .about-picture{
-  margin-top:50px;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
   overflow: hidden;
+  width: 31%;
+  float: left;
+  margin-top: 10%;
 }
 
-.hillary{
-  height: 370px;
-  margin-left: -40px;
-}
 
-.monica{
-  height: 265px;
-  margin-left: -10px;
+.about-picture img{
+  height: 100%;
+  width: 100%;
 }
 
 .desc{
-  width: 50%;
+  width: 65%;
   float: right;
-  margin-top: -220px;
+}
+
+.desc-paragraph{
   font-family: 'Crimson Text', serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   line-height: 1.3em;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .slider{
@@ -150,8 +157,10 @@ h3{
 :global .slick-slider img{
   width: 800px;
   margin: 0 auto;
-  -webkit-filter: grayscale(25%); /* Safari */
-  filter: grayscale(25%);
+}
+
+:global .slick-slider .square-image{
+  width: 650px;
 }
 
 

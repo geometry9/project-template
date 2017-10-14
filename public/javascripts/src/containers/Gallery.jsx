@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Menu from '../components/menu';
 import Slider from 'react-slick';
 import Arrow from '../components/arrow'
-import NavigateNext from 'react-icons/lib/md/navigate-next';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import style from '../../../stylesheets/style.css';
 
@@ -14,22 +13,42 @@ class Gallery extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      nextArrow: <Arrow direction="right" />,
-      prevArrow: <Arrow direction="left" />,
+      nextArrow: <Arrow key="5" direction="right" />,
+    prevArrow: <Arrow key="6" direction="left" />,
     };
     return(
       <ReactCSSTransitionGroup
         transitionName="load"
         transitionAppear={true}
-        transitionEnterTimeout={500}
-        transitionAppearTimeout={500}
-        transitionEnter={false}
+        transitionEnterTimeout={1000}
+        transitionAppearTimeout={1000}
+        transitionEnter={true}
         transitionLeave={false}
       >
-      <div key="1"className={style['homepage-wrapper']}>
-        <Menu key="2" />
-        <div key="3" className={style.slider}>
+      <div key="3"className={style['gallery-wrapper']}>
+        <Menu key="1" />
+        <div key="2" className={style.slider}>
           <Slider {...settings}>
+            <div>
+              <div key="5" className={style['slider-image-wrapper']}>
+                <img className="square-image" src="/images/carousel/IMG_1141.JPG" />
+              </div>
+            </div>
+            <div>
+              <div key="6" className={style['slider-image-wrapper']}>
+                <img src="/images/carousel/IMG_0973.JPG" />
+              </div>
+            </div>
+            <div>
+              <div className={style['slider-image-wrapper']}>
+                <img src="/images/carousel/IMG_1184-1.JPG" />
+              </div>
+            </div>
+            <div>
+              <div className={style['slider-image-wrapper']}>
+                <img src="/images/carousel/IMG_1189.JPG" />
+              </div>
+            </div>
             <div>
               <div key="4" className={style['slider-image-wrapper']}>
                 <img src="/images/carousel/IMG_0843.JPG" />
@@ -52,11 +71,6 @@ class Gallery extends React.Component {
             </div>
             <div>
               <div className={style['slider-image-wrapper']}>
-                <img src="/images/carousel/IMG_0981.JPG" />
-              </div>
-            </div>
-            <div>
-              <div className={style['slider-image-wrapper']}>
                 <img src="/images/carousel/IMG_1178.JPG" />
               </div>
             </div>
@@ -73,11 +87,6 @@ class Gallery extends React.Component {
             <div>
               <div className={style['slider-image-wrapper']}>
                 <img src="/images/carousel/IMG_1183.JPG" />
-              </div>
-            </div>
-            <div>
-              <div className={style['slider-image-wrapper']}>
-                <img src="/images/carousel/IMG_1184.JPG" />
               </div>
             </div>
             <div>
