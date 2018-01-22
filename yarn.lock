@@ -3966,6 +3966,10 @@ react-typography@^0.15.10:
   version "0.15.10"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.15.10.tgz#1ece7bbd856735bd2ada4f6c40be508e994655a8"
 
+react-ui-components@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-ui-components/-/react-ui-components-1.1.2.tgz#9aa15632efe3ee5d699121600e6fa18c6bd09555"
+
 react@^15.4.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"

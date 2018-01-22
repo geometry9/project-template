@@ -48,12 +48,9 @@ const reservations = [{
     table: 'M'
   }];
 const tables = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").split("");
-console.log(tables)
 const date1 = new Date('January 15, 2018 17:00:00');
 const date2 = new Date('January 16, 2018 01:00:00');
-
 const range = moment.range(date1, date2);
-
 const timeSlots = Array.from(range.by('minutes', { step: 15 }));
 
 
@@ -68,7 +65,7 @@ class Home extends React.Component {
         transitionLeave={false}
       >
       <div className={style["homepage-wrapper"]}>
-        <ReservationTable timeSlots={timeSlots} tables={tables} reservations={reservations} />
+        <ReservationTable date={date1} timeSlots={timeSlots} tables={tables} reservations={reservations} />
       </div>
     </CSSTransitionGroup>
     )
